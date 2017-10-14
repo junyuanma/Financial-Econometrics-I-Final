@@ -7,6 +7,7 @@
 #reg_backward() is a function that performs the backward stepwise regression.
 #Arguments in some functions contains "olslist", which indicates that this argument should be a list that conforms with
 #the format of the output of the OLS.multi() function.
+#Author: Junyuan Ma
 ols.multi <- function(dep, indep) {
 	# Beta
 	beta <- solve(t(indep) %*% indep) %*% t(indep) %*% dep
